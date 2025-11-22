@@ -174,20 +174,22 @@ def running_synergy_ratio(fk: Mapping[int, float], total_info: float) -> List[Tu
     return ratios
 
 
-def run_experiment() -> Dict[str, object]:
-    graph_data = build_graph_state()
+def analyze_fragments(
+    adjacency: np.ndarray, bulk: int, fragments: List[int], label: str
+) -> Dict[str, object]:
+    """Compute mutual information, Möbius terms, and synergy ratios for a fragment set."""
 
-    mi_table = mutual_information_table(
-        graph_data.adjacency, graph_data.bulk_target, graph_data.fragment_set
-    )
+    ordered_fragments = sorted(fragments)
+    mi_table = mutual_information_table(adjacency, bulk, ordered_fragments)
     f_values = mobius_inversion(mi_table)
     fk = aggregate_fk(f_values)
-    total_info = mi_table[tuple(graph_data.fragment_set)]
+    total_info = mi_table[tuple(ordered_fragments)]
     ratios = running_synergy_ratio(fk, total_info)
 
     return {
-        "bulk_target": graph_data.bulk_target,
-        "fragment_set": graph_data.fragment_set,
+        "label": label,
+        "bulk_target": bulk,
+        "fragment_set": ordered_fragments,
         "mutual_information": serialize_table(mi_table),
         "f_values": serialize_table(f_values),
         "fk": fk,
@@ -196,13 +198,55 @@ def run_experiment() -> Dict[str, object]:
     }
 
 
+def run_experiment() -> Dict[str, object]:
+    graph_data = build_graph_state()
+
+    recovery_wedge = analyze_fragments(
+        graph_data.adjacency,
+        graph_data.bulk_target,
+        graph_data.fragment_set,
+        label="recovery_wedge",
+    )
+
+    outside_wedge = analyze_fragments(
+        graph_data.adjacency,
+        graph_data.bulk_target,
+        [3, 4, 5, 6, 7],
+        label="outside_wedge_control",
+    )
+
+    fragment_growth_sets = [
+        ([0, 1, 2], "growth_3_qubits_012"),
+        ([0, 2, 14], "growth_3_qubits_0_2_14"),
+        ([0, 1, 2, 12], "growth_4_qubits_0_1_2_12"),
+    ]
+
+    fragment_growth = [
+        analyze_fragments(graph_data.adjacency, graph_data.bulk_target, subset, label)
+        for subset, label in fragment_growth_sets
+    ]
+
+    experiments = [recovery_wedge, outside_wedge, *fragment_growth]
+
+    return {
+        "graph": {
+            "bulk_target": graph_data.bulk_target,
+            "bulk_nodes": graph_data.bulk_nodes,
+            "boundary_nodes": graph_data.boundary_nodes,
+        },
+        "experiments": experiments,
+    }
+
+
 if __name__ == "__main__":
     results = run_experiment()
-    print("Bulk qubit:", results["bulk_target"])
-    print("Fragments:", results["fragment_set"])
-    print("Total I(bulk:fragments):", results["total_information"])
-    print("f_k contributions:", results["fk"])
-    print("Running R_{>=3}:", results["synergy_ratio"])
+    print("Graph bulk target:", results["graph"]["bulk_target"])
+    for experiment in results["experiments"]:
+        print("---", experiment["label"], "---")
+        print("Fragments:", experiment["fragment_set"])
+        print("Total I(bulk:fragments):", experiment["total_information"])
+        print("f_k contributions:", experiment["fk"])
+        print("Running R_{>=3}:", experiment["synergy_ratio"])
     with open("dagi_results.json", "w", encoding="utf-8") as fh:
         json.dump(results, fh, indent=2)
         fh.write("\n")
