@@ -1,0 +1,1564 @@
+{
+  "graph": {
+    "bulk_target": 15,
+    "bulk_nodes": [
+      3,
+      7,
+      11,
+      15
+    ],
+    "boundary_nodes": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ]
+  },
+  "experiments": [
+    {
+      "label": "recovery_wedge",
+      "bulk_target": 15,
+      "fragment_set": [
+        0,
+        1,
+        2,
+        12,
+        14
+      ],
+      "mutual_information": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12,
+            14
+          ],
+          "value": 2
+        }
+      ],
+      "f_values": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12,
+            14
+          ],
+          "value": 2
+        }
+      ],
+      "fk": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 2.0
+      },
+      "synergy_ratio": [
+        [
+          1,
+          0.0
+        ],
+        [
+          2,
+          0.0
+        ],
+        [
+          3,
+          0.0
+        ],
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          1.0
+        ]
+      ],
+      "total_information": 2
+    },
+    {
+      "label": "outside_wedge_control",
+      "bulk_target": 15,
+      "fragment_set": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mutual_information": [
+        {
+          "subset": [
+            3
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        }
+      ],
+      "f_values": [
+        {
+          "subset": [
+            3
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "value": 0
+        }
+      ],
+      "fk": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "synergy_ratio": [
+        [
+          1,
+          0.0
+        ],
+        [
+          2,
+          0.0
+        ],
+        [
+          3,
+          0.0
+        ],
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ]
+      ],
+      "total_information": 0
+    },
+    {
+      "label": "growth_3_qubits_012",
+      "bulk_target": 15,
+      "fragment_set": [
+        0,
+        1,
+        2
+      ],
+      "mutual_information": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        }
+      ],
+      "f_values": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        }
+      ],
+      "fk": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "synergy_ratio": [
+        [
+          1,
+          0.0
+        ],
+        [
+          2,
+          0.0
+        ],
+        [
+          3,
+          0.0
+        ]
+      ],
+      "total_information": 0
+    },
+    {
+      "label": "growth_3_qubits_0_2_14",
+      "bulk_target": 15,
+      "fragment_set": [
+        0,
+        2,
+        14
+      ],
+      "mutual_information": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            14
+          ],
+          "value": 0
+        }
+      ],
+      "f_values": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            14
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            14
+          ],
+          "value": 0
+        }
+      ],
+      "fk": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "synergy_ratio": [
+        [
+          1,
+          0.0
+        ],
+        [
+          2,
+          0.0
+        ],
+        [
+          3,
+          0.0
+        ]
+      ],
+      "total_information": 0
+    },
+    {
+      "label": "growth_4_qubits_0_1_2_12",
+      "bulk_target": 15,
+      "fragment_set": [
+        0,
+        1,
+        2,
+        12
+      ],
+      "mutual_information": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        }
+      ],
+      "f_values": [
+        {
+          "subset": [
+            0
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            12
+          ],
+          "value": 0
+        }
+      ],
+      "fk": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "synergy_ratio": [
+        [
+          1,
+          0.0
+        ],
+        [
+          2,
+          0.0
+        ],
+        [
+          3,
+          0.0
+        ],
+        [
+          4,
+          0.0
+        ]
+      ],
+      "total_information": 0
+    }
+  ]
+}
