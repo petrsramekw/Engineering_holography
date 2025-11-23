@@ -1,0 +1,5 @@
+networkx==3.5
+numpy==2.3.5
+matplotlib==3.10.7
+pynauty==2.8.8.1
+sympy==1.14.0
